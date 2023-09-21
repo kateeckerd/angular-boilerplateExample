@@ -1,22 +1,33 @@
-<div class="heading">
-  <h1 >HELLO WORLD</h1>
-</div>
-
-<div class="buttons">
-  <button class="duplicate">Duplicate  card</button>
-  <button class="changetxt">Change title</button>
-  <button id="deletecard">Delete</button>
-  <button data-toggle-btn>Toggle details</button>
-    <button id="changebackground">Change Background</button>
+<div class="wrapper">
+  <img class="image"
+    src="https://brand.psu.edu/images/backgrounds/atheltic-wrong.png"
+    alt="Penn State Logo" width="400" height="225">
+  
+  <div class="header">
+    <h2>Penn State Football Nittany Lions</h2>
+  </div>
+    <h3>Description</h3>
+      <div class="description">
+    <h5>Penn State Football, represented by the famous Nittany Lion logo, is a D1 football program located in State College, PA. Penn State football has won 2 national championships in program history and are predicted to make an apperance in playoffs in 2024. </h5>
+  </div>
+  <div class="btn-wrapper">
+      <button onclick="hideDescription()">Details</button>
+  </div>
   </div>
   
-  <div id= "card" class="card">
-    <img src="https://media.istockphoto.com/id/1072291024/vector/vector-illustration-cartoon-residential-townhouse.jpg?s=612x612&w=0&k=20&c=vhYukmGJvZYdabADEakKi8W2-V47XzZ_fUW-3RRmPjE=" width="100"
-         height="100"/>
-      <h3 >Real Estate Agency</h3>
-      <h4>IST 256 Pod 2</h4>
-    <details class="details">
-      <summary>Open me</summary>
-      <div>
-        The best agency around! Give us a call!
-      </div>
+  <div class="dupButton">
+    <button>Duplicate</button>
+  </div>
+      
+  <div class="backgroundColorButton">
+    <button onclick="changeBackgroundColor()"> Change Background Color</button>
+  </div>
+  
+  <div class="headingButton">
+    <button onclick="changeHeading()"> Change Heading</button>
+  </div>
+  
+  <div class="deleteCard">
+    <button onclick="deleteDupCard()">Delete</button>
+  </div>
+  
